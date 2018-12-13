@@ -1,3 +1,4 @@
+#!/bin/bash
 #
 # Copyright (C) 2018 The LineageOS Project
 #
@@ -14,5 +15,12 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage.mk
+set -e
+
+export DEVICE=enchilada
+export DEVICE_COMMON=sdm845-common
+export VENDOR=oneplus
+
+export DEVICE_BRINGUP_YEAR=2018
+
+./../../$VENDOR/$DEVICE_COMMON/setup-makefiles.sh $@
