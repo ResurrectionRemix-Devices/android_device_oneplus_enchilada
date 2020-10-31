@@ -2,5 +2,11 @@
   {
     "repository"  : "device_oneplus_sdm845-common",
     "target_path" : "device/oneplus/sdm845-common"
+  },
+  {
+    "repository"  : "recovery_rr_twrp",
+    "target_path" : "recovery/rr/twrp/device/oneplus/enchilada",
+    "branch"      : "enchilada",
+    "clone-depth" : "1"
   }
 ]
