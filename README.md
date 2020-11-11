@@ -20,16 +20,19 @@ Copyright 2018 - The LineageOS Project.
 
 ![OnePlus 6](https://cdn2.gsmarena.com/vv/pics/oneplus/oneplus-6-5.jpg "OnePlus 6")
 
-
-## Temporary build instructions
+## Build instructions
 
 ```
 # Compiling
-$ m[ake|ka] bootimage systemimage
+$ lunch rr_enchilada-userdebug (this will auto pull all dependencies)
+$ export TARGET_SHIPS_X=true (where X is the desired addition. e.g TARGET_SHIPS_GCAM=true)
+$ m[ake|ka] bacon -jx (where x is the number of jobs to run on parallel threads)
 
-# Installing
-$ fastboot --disable-verity --disable-verification flash vbmeta stock_vbmeta.img
-$ fastboot flash boot boot.img
-$ fastboot flash system system.img
-$ fastboot -w reboot
 ```
+
+| Conditional           | Value  | Result                    |
+| ----------------------|:------:| -------------------------:|
+| TARGET_SHIPS_GAPPS    | true   | Includes Pixel Gapps      |
+| TARGET_SHIPS_GCAM     | true   | Includes Google Camera    |
+| TARGET_SHIPS_OOSCAM   | true   | Includes OOS Cam & Gallery|
+
