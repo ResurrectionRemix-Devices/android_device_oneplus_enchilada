@@ -23,7 +23,9 @@ DEVICE_PATH := device/oneplus/enchilada
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
 # Prebuilt Recovery
+ifeq ($(TARGET_SHIPS_RR_TWRP),true)
 TARGET_PREBUILT_RECOVERY_RAMDISK_CPIO := recovery/rr/twrp/device/oneplus/enchilada/ramdisk-recovery.cpio
+endif
 
 # inherit from the proprietary version
 -include vendor/oneplus/enchilada/BoardConfigVendor.mk

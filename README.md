@@ -35,4 +35,4 @@ $ m[ake|ka] bacon -jx (where x is the number of jobs to run on parallel threads)
 | TARGET_SHIPS_GAPPS    | true   | Includes Pixel Gapps      |
 | TARGET_SHIPS_GCAM     | true   | Includes Google Camera    |
 | TARGET_SHIPS_OOSCAM   | true   | Includes OOS Cam & Gallery|
-
+| TARGET_SHIPS_RR_TWRP  | true   | Includes RR TWRP          |
