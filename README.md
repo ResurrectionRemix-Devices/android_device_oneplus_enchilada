@@ -25,6 +25,8 @@ Copyright 2018 - The LineageOS Project.
 ```
 # Compiling
 $ lunch rr_enchilada-userdebug (this will auto pull all dependencies)
+$ sudo apt install pigz (pigz is needed for mcd Kernel)
+$ export TEMPORARY_DISABLE_PATH_RESTRICTIONS=true (also needed for mcd Kernel)
 $ repo forall -r '.*microg.*' -c 'git lfs fetch && git lfs checkout' (only needed for microG builds)
 $ export TARGET_SHIPS_X=true (where X is the desired addition. e.g TARGET_SHIPS_GCAM=true)
 $ m[ake|ka] bacon -jx (where x is the number of jobs to run on parallel threads)
