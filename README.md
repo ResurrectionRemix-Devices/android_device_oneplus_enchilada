@@ -18,7 +18,7 @@ It was released in May 2018.
 
 Copyright 2018 - The LineageOS Project.
 
-![OnePlus 6](https://cdn2.gsmarena.com/vv/pics/oneplus/oneplus-6-5.jpg "OnePlus 6")
+![OnePlus 6](https://gzhls.at/i/84/66/1818466-n0.jpg "OnePlus 6")
 
 ## Build instructions
 
